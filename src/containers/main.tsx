@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { motion } from "framer-motion"
+import Navbar from '../components/Navbar/Navbar'
+import Footer from "../components/Footer/Footer"
 
 function Main() {
 
@@ -47,9 +49,20 @@ function Main() {
     }
 
     return (
-        <div>
-            Home
-        </div>
+        <Router>
+            <motion.div variants={fadeNav} initial="hidden" animate="visible">
+                <Navbar />
+            </motion.div>
+
+            {/* <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
+            <Chatbot />
+        </motion.div> */}
+
+            <motion.div variants={fadeFooter} initial="hidden" animate="visible" >
+                <Footer />
+            </motion.div>
+
+        </Router>
     )
 }
 
