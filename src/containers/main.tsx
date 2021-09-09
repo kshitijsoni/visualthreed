@@ -7,6 +7,7 @@ import Learn from "../pages/Learn/Learn"
 import FunZone from "../pages/FunZone/FunZone"
 import TicTacToe from "../pages/FunZone/Games/TicTacToe"
 import Contact from "../pages/Contact/Contact"
+import Page404 from '../pages/404/404page'
 import Chatbot from '../components/Chatbot/Chatbot';
 import Footer from "../components/Footer/Footer"
 
@@ -68,7 +69,7 @@ function Main() {
                 <Route path='/funzone' exact component={FunZone} />
                 <Route path='/tictactoe' exact component={TicTacToe} />
                 <Route path='/contact' exact component={Contact} />
-                {/* <Route component={Page404} /> */}
+                <Route component={Page404} />
             </Switch>
 
             <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
