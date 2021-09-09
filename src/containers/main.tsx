@@ -4,7 +4,9 @@ import { motion } from "framer-motion"
 import Navbar from '../components/Navbar/Navbar'
 import Home from "../pages/Home/Home"
 import Learn from "../pages/Learn/Learn"
+import Chatbot from '../components/Chatbot/Chatbot';
 import Footer from "../components/Footer/Footer"
+import Chatbot from '../components/Chatbot/Chatbot';
 
 function Main() {
 
@@ -67,9 +69,9 @@ function Main() {
             <Route component={Page404} /> */}
             </Switch>
 
-            {/* <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
+            <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
                 <Chatbot />
-            </motion.div> */}
+            </motion.div>
 
             <motion.div variants={fadeFooter} initial="hidden" animate="visible" >
                 <Footer />
