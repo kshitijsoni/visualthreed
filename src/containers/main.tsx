@@ -4,9 +4,11 @@ import { motion } from "framer-motion"
 import Navbar from '../components/Navbar/Navbar'
 import Home from "../pages/Home/Home"
 import Learn from "../pages/Learn/Learn"
+import FunZone from "../pages/FunZone/FunZone"
+import TicTacToe from "../pages/FunZone/Games/TicTacToe"
+import Contact from "../pages/Contact/Contact"
 import Chatbot from '../components/Chatbot/Chatbot';
 import Footer from "../components/Footer/Footer"
-import Chatbot from '../components/Chatbot/Chatbot';
 
 function Main() {
 
@@ -60,13 +62,13 @@ function Main() {
             <Switch>
                 <Route path='/' exact component={Home} />
                 <Route path='/learn' exact component={Learn} />
-            {/* <Route path='/class1' exact component={ClassRoom1} />
+                {/* <Route path='/class1' exact component={ClassRoom1} />
             <Route path='/solarsystemexplore' exact component={SloarSystemExplore} />
-            <Route path='/perseveranceexplore' exact component={PerseveranceExplore} />
-            <Route path='/funzone' exact component={FunZone} />
-            <Route path='/tictactoe' exact component={TicTacToe} />
-            <Route path='/contact' exact component={Contact} />
-            <Route component={Page404} /> */}
+            <Route path='/perseveranceexplore' exact component={PerseveranceExplore} /> */}
+                <Route path='/funzone' exact component={FunZone} />
+                <Route path='/tictactoe' exact component={TicTacToe} />
+                <Route path='/contact' exact component={Contact} />
+                {/* <Route component={Page404} /> */}
             </Switch>
 
             <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
