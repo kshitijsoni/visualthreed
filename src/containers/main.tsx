@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { motion } from "framer-motion"
 import Navbar from '../components/Navbar/Navbar'
+import Home from "../pages/Home/Home"
+import Learn from "../pages/Learn/Learn"
 import Footer from "../components/Footer/Footer"
 
 function Main() {
@@ -53,10 +55,21 @@ function Main() {
             <motion.div variants={fadeNav} initial="hidden" animate="visible">
                 <Navbar />
             </motion.div>
+            <Switch>
+                <Route path='/' exact component={Home} />
+                <Route path='/learn' exact component={Learn} />
+            {/* <Route path='/class1' exact component={ClassRoom1} />
+            <Route path='/solarsystemexplore' exact component={SloarSystemExplore} />
+            <Route path='/perseveranceexplore' exact component={PerseveranceExplore} />
+            <Route path='/funzone' exact component={FunZone} />
+            <Route path='/tictactoe' exact component={TicTacToe} />
+            <Route path='/contact' exact component={Contact} />
+            <Route component={Page404} /> */}
+            </Switch>
 
             {/* <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
-            <Chatbot />
-        </motion.div> */}
+                <Chatbot />
+            </motion.div> */}
 
             <motion.div variants={fadeFooter} initial="hidden" animate="visible" >
                 <Footer />

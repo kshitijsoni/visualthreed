@@ -3,7 +3,6 @@ import { AuthContext } from "./context/AuthContext";
 import Preloader from "./components/Preloader/Preloader"
 import Main from "./containers/main"
 import Login from "./pages/Login/Login"
-import "./App.scss"
 
 function App() {
 
