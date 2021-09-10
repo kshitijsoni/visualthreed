@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar/Navbar'
 import Home from "../pages/Home/Home"
 import Learn from "../pages/Learn/Learn"
 import ClassRoom1 from "../pages/Classroom/Classroom1"
+import SloarSystemExplore from "../components/3DModelExplore/SloarSystemExplore"
+import PerseveranceExplore from "../components/3DModelExplore/PerseveranceExplore"
 import FunZone from "../pages/FunZone/FunZone"
 import TicTacToe from "../pages/FunZone/Games/TicTacToe"
 import Contact from "../pages/Contact/Contact"
@@ -65,8 +67,8 @@ function Main() {
                 <Route path='/' exact component={Home} />
                 <Route path='/learn' exact component={Learn} />
                 <Route path='/class1' exact component={ClassRoom1} />
-                {/* <Route path='/solarsystemexplore' exact component={SloarSystemExplore} />
-            <Route path='/perseveranceexplore' exact component={PerseveranceExplore} /> */}
+                <Route path='/solarsystemexplore' exact component={SloarSystemExplore} />
+                <Route path='/perseveranceexplore' exact component={PerseveranceExplore} />
                 <Route path='/funzone' exact component={FunZone} />
                 <Route path='/tictactoe' exact component={TicTacToe} />
                 <Route path='/contact' exact component={Contact} />
