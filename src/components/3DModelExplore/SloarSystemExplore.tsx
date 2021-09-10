@@ -234,11 +234,6 @@ function Details() {
             </div>
         )
     }
-    // return (
-    //     <div className="pb-12 w-full ">
-    //         {snap.current}
-    //     </div>
-    // );
 }
 
 export default function Perseverance() {

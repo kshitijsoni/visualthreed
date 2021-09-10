@@ -734,154 +734,154 @@ function Details() {
     const { t } = useTranslation();
 
     const snap = useSnapshot(state)
-    // if (snap.current === "lambert2") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreSun')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreSunDesc')}</p>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert3") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreMercury')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreMercuryDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+    if (snap.current === "lambert2") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreSun')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreSunDesc')}</p>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert3") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreMercury')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreMercuryDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/1ed8bbb4-536c-4616-afe9-0dbee6e3432c" alt="Solar System QR" />
-    //                 <a href="https://go.echoar.xyz/3BB2" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert4") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreVenus')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreVenusDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/1ed8bbb4-536c-4616-afe9-0dbee6e3432c" alt="Solar System QR" />
+                    <a href="https://go.echoar.xyz/3BB2" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert4") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreVenus')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreVenusDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/50a234a1-cc5c-4870-9e1d-d709a2f3d6d2" alt="Venus QR" />
-    //                 <a href="https://go.echoar.xyz/44Xn" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert5") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreEarth')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreEarthDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/50a234a1-cc5c-4870-9e1d-d709a2f3d6d2" alt="Venus QR" />
+                    <a href="https://go.echoar.xyz/44Xn" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert5") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreEarth')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreEarthDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/90a2a92c-b69d-45d4-8935-9ea307faeb05" alt="Earth QR" />
-    //                 <a href="https://go.echoar.xyz/J8oi" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert6") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreMars')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreMarsDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/90a2a92c-b69d-45d4-8935-9ea307faeb05" alt="Earth QR" />
+                    <a href="https://go.echoar.xyz/J8oi" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert6") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreMars')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreMarsDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/633d6a9c-73d8-4207-ada6-61dc04cfebe3" alt="Mars QR" />
-    //                 <a href="https://go.echoar.xyz/rQke" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert7") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreJupiter')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreJupiterDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/633d6a9c-73d8-4207-ada6-61dc04cfebe3" alt="Mars QR" />
+                    <a href="https://go.echoar.xyz/rQke" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert7") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreJupiter')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreJupiterDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/a89518a9-dc19-4857-89b0-7aea87236ecc" alt="Jupiter QR" />
-    //                 <a href="https://go.echoar.xyz/eG6s" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert9") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreSaturn')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreSaturnDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/a89518a9-dc19-4857-89b0-7aea87236ecc" alt="Jupiter QR" />
+                    <a href="https://go.echoar.xyz/eG6s" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert9") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreSaturn')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreSaturnDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/101dbcc9-b7a2-4e51-af71-7c73b2351e48" alt="Saturn QR" />
-    //                 <a href="https://go.echoar.xyz/8oHR" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert10") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreUranus')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreUranusDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/101dbcc9-b7a2-4e51-af71-7c73b2351e48" alt="Saturn QR" />
+                    <a href="https://go.echoar.xyz/8oHR" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert10") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreUranus')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreUranusDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/ee979b82-19b0-4dad-b3d4-b4d07d1308a7" alt="Uranus QR" />
-    //                 <a href="https://go.echoar.xyz/bttS" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "lambert11") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">{t('SolarSystemExploreNeptune')}</h1>
-    //             <p className="text-xl text-justify">{t('SolarSystemExploreNeptuneDesc')}</p>
-    //             <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/ee979b82-19b0-4dad-b3d4-b4d07d1308a7" alt="Uranus QR" />
+                    <a href="https://go.echoar.xyz/bttS" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else if (snap.current === "lambert11") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">{t('SolarSystemExploreNeptune')}</h1>
+                <p className="text-xl text-justify">{t('SolarSystemExploreNeptuneDesc')}</p>
+                <p className="self-center mx-8 text-xl tracking-wide text-justify font-fontVollkorn">{t('modelView')}</p>
 
-    //             <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
-    //                 <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/270df91e-d092-43b1-ad6c-b1835523ec15" alt="Neptune QR" />
-    //                 <a href="https://go.echoar.xyz/ya76" target="_blank" rel="noreferrer">
-    //                     <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
-    //                 </a>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-    // else {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-2xl tracking-wider">{t('SolarSystemExploreClick')}</h1>
-    //         </div>
-    //     )
-    // }
-    return (
-        <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-            {snap.current}
-        </div>
-    );
+                <div className="grid justify-center grid-cols-1 gap-2 pb-8 mx-8 md:grid-cols-2 lg:grid-cols-2">
+                    <img className="flex p-6 text-6xl rounded-xl h-48 w-48" src="https://storage.echoar.xyz/wispy-violet-4999/270df91e-d092-43b1-ad6c-b1835523ec15" alt="Neptune QR" />
+                    <a href="https://go.echoar.xyz/ya76" target="_blank" rel="noreferrer">
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">{t('modelViewInAR')}</button>
+                    </a>
+                </div>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-2xl tracking-wider">{t('SolarSystemExploreClick')}</h1>
+            </div>
+        )
+    }
+    // return (
+    //     <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+    //         {snap.current}
+    //     </div>
+    // );
 }
 
 export default function Perseverance() {
