@@ -16,11 +16,11 @@ class Chatroom extends React.Component {
                 img: "http://i.imgur.com/Tj5DGiO.jpg",
             }, {
                 username: "User 1",
-                content: <p>Thats cool</p>,
+                content: <p>How you doin..</p>,
                 img: "http://i.imgur.com/Tj5DGiO.jpg",
             }, {
                 username: "John Deo",
-                content: <p>Lorem ipsum dolor sit amet, nibh ipsum. Cum class sem inceptos incidunt sed sed. Tempus wisi enim id, arcu sed lectus aliquam, nulla vitae est bibendum molestie elit risus.</p>,
+                content: <p>This site is dope</p>,
                 img: "http://i.imgur.com/ARbQZix.jpg",
             }, {
                 username: "User 1",
@@ -28,15 +28,15 @@ class Chatroom extends React.Component {
                 img: "http://i.imgur.com/Tj5DGiO.jpg",
             }, {
                 username: "User 1",
-                content: <p>Chilltime is going to be an app for you to view videos with friends</p>,
+                content: <p>The site is really easy to use</p>,
                 img: "http://i.imgur.com/Tj5DGiO.jpg",
             }, {
                 username: "User 1",
-                content: <p>You can sign-up now to try out our private beta!</p>,
+                content: <p>The UI of the site is great!</p>,
                 img: "http://i.imgur.com/Tj5DGiO.jpg",
             }, {
                 username: "User 2",
-                content: <p>Definitely! Sounds great!</p>,
+                content: <p>Hi, can someone help me?</p>,
                 img: "http://i.imgur.com/Tj5DGiO.jpg",
             }]
         };
