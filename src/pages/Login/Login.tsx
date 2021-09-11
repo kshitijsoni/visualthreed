@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion"
 import Study from "../../assets/study.svg"
 import { auth } from "../../firebase";
+import firebase from 'firebase'
+import GoogleLogo from "../../assets/chatroom/google_logo.png"
 
 const Login = () => {
 
@@ -35,6 +37,11 @@ const Login = () => {
 
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
+
+    function signInWithGoogle() {
+        const provider = new firebase.auth.GoogleAuthProvider()
+        auth.signInWithPopup(provider)
+    }
 
     const createAccount = async () => {
         try {
@@ -95,6 +102,19 @@ const Login = () => {
                                     <button onClick={signIn} className="h-12 px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 hover:shadow-lg">Sign In</button>
 
                                     <button onClick={createAccount} className="h-12 px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 hover:shadow-lg">Sign Up</button>
+                                </div>
+
+                                <div className="w-full flex items-center justify-center text-lg mb-4">
+                                    <div className="inline-flex h-1 mx-4 bg-indigo-500 rounded-full w-52"></div>
+                                    or
+                                    <div className="inline-flex h-1 mx-4 bg-indigo-500 rounded-full w-52"></div>
+                                </div>
+
+                                <div className="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 cursor-pointer shadow-lg">
+                                    <div className="flex items-center justify-center">
+                                        <img src={GoogleLogo} alt="google" className="w-4" />
+                                        <span className="ml-4" onClick={signInWithGoogle}>Sign in with Google</span>
+                                    </div>
                                 </div>
 
                             </div>

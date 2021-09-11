@@ -55,7 +55,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="pt-16 bg-homeImg">
+            <div className="pt-16 md:pt-8 bg-homeImg">
                 <div className="p-4 origin-bottom-right lg:mx-36 md:mx-8">
                     <div className="p-4 space-y-10 md:space-y-0 md:grid md:grid-cols-2">
 

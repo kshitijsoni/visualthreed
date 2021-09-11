@@ -10,12 +10,12 @@ import SpaceStation from "../../components/3DModels/SpaceStation"
 export default function ClassRoom1() {
     return (
         <div className="z-10 pt-20 bg-ARbg">
-            {/* <Earth /> */}
-            {/* <SolarSystem /> */}
-            {/* <Water /> */}
-            {/* <ChemGlass /> */}
-            {/* <DiscoverySpaceShuttle /> */}
-            {/* <Perseverance /> */}
+            <Earth />
+            <SolarSystem />
+            <Water />
+            <ChemGlass />
+            <DiscoverySpaceShuttle />
+            <Perseverance />
             <SpaceStation />
         </div>
     )
