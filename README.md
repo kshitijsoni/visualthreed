@@ -42,7 +42,6 @@ You can checkout the demo video on youtube by clicking on the thumbnail below.
 - Firebase
 - React-three-fiber
 - i18next
-- Firebase
 - Tailwind CSS & Framer Motion
 
 ## 🤝 Credits
