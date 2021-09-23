@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 
-const firebaseApp = firebase.initializeApp({
+firebase.initializeApp({
   apiKey: "AIzaSyAgbePxdBusXTwMd9omS8BVLVERNTqmZWE",
   authDomain: "skillcept-74faf.firebaseapp.com",
   projectId: "skillcept-74faf",
@@ -10,8 +10,8 @@ const firebaseApp = firebase.initializeApp({
   measurementId: "G-3W0QP755F4"
 })
 
-const db = firebaseApp.firestore()
+const firestore = firebase.firestore()
 
 const auth = firebase.auth()
 
-export { db, auth }
+export { firestore, auth }

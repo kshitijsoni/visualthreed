@@ -4,8 +4,9 @@ import { motion } from "framer-motion"
 import Navbar from '../components/Navbar/Navbar'
 import Home from "../pages/Home/Home"
 import Learn from "../pages/Learn/Learn"
-import Chatroom from "../pages/Chatroom/Chatroom.js"
+import Chatroom from "../pages/Chatroom/Chatroom"
 import ClassRoom1 from "../pages/Classroom/Classroom1"
+import ClassRoom2 from "../pages/Classroom/Classroom2"
 import SloarSystemExplore from "../components/3DModelExplore/SloarSystemExplore"
 import PerseveranceExplore from "../components/3DModelExplore/PerseveranceExplore"
 import FunZone from "../pages/FunZone/FunZone"
@@ -69,6 +70,7 @@ function Main() {
                 <Route path='/learn' exact component={Learn} />
                 <Route path='/chatroom' exact component={Chatroom} />
                 <Route path='/class1' exact component={ClassRoom1} />
+                <Route path='/class2' exact component={ClassRoom2} />
                 <Route path='/solarsystemexplore' exact component={SloarSystemExplore} />
                 <Route path='/perseveranceexplore' exact component={PerseveranceExplore} />
                 <Route path='/funzone' exact component={FunZone} />

@@ -58,6 +58,7 @@ function Model(props: JSX.IntrinsicElements['group']) {
     const group = useRef<THREE.Group>()
     const { nodes, materials } = useGLTF('/SolarSystem/scene.gltf') as GLTFResult
     const [hovered, set] = useState(null)
+    console.log(hovered);
     return (
         <group ref={group} {...props} dispose={null}
             //@ts-ignore
