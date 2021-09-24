@@ -1,9 +1,8 @@
 import React from 'react';
+import ChatMessage from "./ChatMessage"
 import firebase from 'firebase/app'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import { auth, firestore } from "../../firebase"
-import { useTranslation } from 'react-i18next'
-import { motion } from "framer-motion"
 
 interface Message {
     text: string,
@@ -12,23 +11,7 @@ interface Message {
     id: string
 }
 
-type ChatMessageProps = {
-    message: Message,
-    key: string
-}
-
-function ChatMessage(props: ChatMessageProps) {
-    const { text, uid, photoURL } = props.message
-    const messageClass = auth.currentUser != null && uid === auth.currentUser.uid ? 'sent flex-row-reverse text-white self-end' : 'received'
-    return <div className={`message ${messageClass} flex items-center`}>
-        <img src={photoURL} className="w-8 h-8 m-2 rounded-full shadow-lg bg-gray-500" />
-        <p className="flex ml-1 h-auto text-md font-normal p-1 items-end rounded-md">{text}</p>
-    </div>
-}
-
-function ChatRoom() {
-
-
+function Chatroom() {
     const messagesRef = firestore.collection('messages')
     const query = messagesRef.orderBy('createdAt').limit(25)
 
@@ -76,69 +59,4 @@ function ChatRoom() {
     )
 }
 
-function Chatroom() {
-
-    const { t } = useTranslation();
-
-    const fadeLogo = {
-        hidden: {
-            scale: .8,
-            opacity: 0
-        },
-        visible: {
-            scale: 1,
-            opacity: 1,
-            transition: {
-                delay: .6,
-            }
-        },
-    }
-
-    const fadeDesc = {
-        hidden: {
-            scale: .8,
-            opacity: 0
-        },
-        visible: {
-            scale: 1,
-            opacity: 1,
-            transition: {
-                delay: .8,
-            }
-        },
-    }
-
-    const fadeBottom = {
-        hidden: {
-            opacity: 0,
-            y: 80,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: .6,
-            }
-        },
-    }
-
-    return (
-        <div className="pt-16 bg-homeImg">
-
-            <motion.div variants={fadeLogo} initial="hidden" animate="visible" className="grid w-full py-10 place-items-center">
-                <h1 className="pb-2 text-5xl font-semibold tracking-wide font-dancingScript lg:text-6xl">
-                    {t('chatroomLogo')}
-                </h1>
-                <div className="inline-flex h-1 bg-indigo-500 rounded-full w-44"></div>
-            </motion.div>
-
-            <motion.div variants={fadeDesc} initial="hidden" animate="visible" className="font-sourceSerifPro italic md:pl-12 pl-10 text-2xl">{t('charroomDesc')}</motion.div>
-
-            <motion.div variants={fadeBottom} initial="hidden" animate="visible" className="font-sourceSerifPro flex justify-center items-center h-screen mx-4">
-                <ChatRoom />
-            </motion.div>
-        </div>
-    );
-}
-
-export default Chatroom;
+export default Chatroom

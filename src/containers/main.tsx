@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Navbar from '../components/Navbar/Navbar'
 import Home from "../pages/Home/Home"
 import Learn from "../pages/Learn/Learn"
-import Chatroom from "../pages/Chatroom/Chatroom"
+import Chatroom from "../pages/Chatroom/ChatRoomPage"
 import ClassRoom1 from "../pages/Classroom/Classroom1"
 import ClassRoom2 from "../pages/Classroom/Classroom2"
 import SloarSystemExplore from "../components/3DModelExplore/SloarSystemExplore"

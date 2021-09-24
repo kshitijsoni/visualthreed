@@ -17,11 +17,11 @@ function App() {
         <>
             {loading === false ? (
                 <div className="App">
-                    {user ? (
+                    {user ?
                         <Main />
-                    ) : (
+                        :
                         <Login />
-                    )}
+                    }
                 </div>
             ) : (
                 <Preloader />
