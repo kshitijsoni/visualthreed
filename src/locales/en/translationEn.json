@@ -22,6 +22,11 @@
 
   "learnCLassTitle": "Select Your Class",
 
+  "learnSubjectTitle": "Select your Subject",
+  "learnCehmistry": "Chemistry",
+  "learnBiology": "Biology",
+  "learnAerospace": "Aerospace",
+
   "modelView": "To view the 3D model in AR, scan the QR code or click on the button below.",
   "modelViewInAR": "View in AR",
   "modelEarthTitle": "Earth",

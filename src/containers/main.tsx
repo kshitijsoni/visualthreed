@@ -7,8 +7,14 @@ import Learn from "../pages/Learn/Learn"
 import Chatroom from "../pages/Chatroom/ChatRoomPage"
 import ClassRoom1 from "../pages/Classroom/Classroom1"
 import ClassRoom2 from "../pages/Classroom/Classroom2"
+import ChemistryPage from "../pages/Classroom/ChemistryClass"
 import SloarSystemExplore from "../components/3DModelExplore/SloarSystemExplore"
 import PerseveranceExplore from "../components/3DModelExplore/PerseveranceExplore"
+import DNAExplore from "../components/3DModelExplore/DNAExplore"
+import SucroseExplore from "../components/3DModelExplore/SucroseExplore"
+import GlucosideExplore from '../components/3DModelExplore/GlucosideExplore';
+import GlucoseExplore from '../components/3DModelExplore/GlucoseExplore';
+import WaterExplore from '../components/3DModelExplore/WaterExplore';
 import FunZone from "../pages/FunZone/FunZone"
 import TicTacToe from "../pages/FunZone/Games/TicTacToe"
 import Contact from "../pages/Contact/Contact"
@@ -71,8 +77,14 @@ function Main() {
                 <Route path='/chatroom' exact component={Chatroom} />
                 <Route path='/class1' exact component={ClassRoom1} />
                 <Route path='/class2' exact component={ClassRoom2} />
+                <Route path='/chemistry' exact component={ChemistryPage} />
                 <Route path='/solarsystemexplore' exact component={SloarSystemExplore} />
                 <Route path='/perseveranceexplore' exact component={PerseveranceExplore} />
+                <Route path='/dnaexplore' exact component={DNAExplore} />
+                <Route path='/sucroseexplore' exact component={SucroseExplore} />
+                <Route path='/glucosideexplore' exact component={GlucosideExplore} />
+                <Route path='/glucoseexplore' exact component={GlucoseExplore} />
+                <Route path='/waterexplore' exact component={WaterExplore} />
                 <Route path='/funzone' exact component={FunZone} />
                 <Route path='/tictactoe' exact component={TicTacToe} />
                 <Route path='/contact' exact component={Contact} />

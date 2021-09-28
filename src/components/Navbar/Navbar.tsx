@@ -13,7 +13,7 @@ const signOut = async () => {
     await auth.signOut();
 };
 
-const changeLang = (ln: any) => {
+const changeLang = (ln: string) => {
     return () => {
         i18n.changeLanguage(ln);
     };

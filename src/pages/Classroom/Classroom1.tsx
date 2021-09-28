@@ -7,7 +7,7 @@ import ChemGlass from "../../components/3DModels/ChemGlass"
 export default function ClassRoom1() {
     return (
         <div className="z-10 pt-20 bg-ARbg">
-            <Link to="/learn" className="m-4">go back</Link>
+            <Link to="/learn" className="m-4">Go back</Link>
             <Earth />
             <SolarSystem />
             <Water />
