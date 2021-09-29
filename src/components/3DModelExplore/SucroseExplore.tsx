@@ -157,11 +157,11 @@ function Model(props: JSX.IntrinsicElements['group']) {
 
     return (
         <group ref={group} {...props} dispose={null}
-             
+            //@ts-ignore
             onPointerOver={(e) => (e.stopPropagation(), set(e.object.material.name))}
             onPointerOut={(e) => e.intersections.length === 0 && set(null)}
             onPointerMissed={() => (state.current = null)}
-             
+            //@ts-ignore
             onPointerDown={(e) => (e.stopPropagation(), (state.current = e.object.material.name))}
         >
             <group rotation={[-Math.PI / 2, 0, 0]}>
