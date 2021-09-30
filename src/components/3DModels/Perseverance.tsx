@@ -1,10 +1,8 @@
 // import { Link } from "react-router-dom";
-import { Canvas } from "@react-three/fiber";
-import { useLoader } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { Environment, OrbitControls, ContactShadows } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense } from "react";
-import "../../i18n"
 import { useTranslation } from 'react-i18next'
 import Loader from "../Preloader/Loader"
 
@@ -45,7 +43,7 @@ export default function Perseverance() {
                             <h2 className="self-center mx-8 mb-4 text-4xl font-medium tracking-wide font-fontVollkorn">{t('modelPerseverance')}</h2>
 
                             <p className="self-center mx-8 sm:text-sm md:text-xl font-medium tracking-wide text-justify font-fontVollkorn">
-                            {t('modelPerseveranceDetails')}
+                                {t('modelPerseveranceDetails')}
                                 <a target="blank" href="https://sketchfab.com/3d-models/perseverance-nasa-mars-landing-2021-c1c94e1f69df45eeae4a0a1d0d27e85b">Perseverance - NASA Mars Landing 2021</a> made by <a href="https://sketchfab.com/nebulousflynn" target="blank" >Thomas Flynn </a>
                                 licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/" target="blank">CC0-1.0</a>
                             </p>

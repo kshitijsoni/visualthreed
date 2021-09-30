@@ -1,10 +1,8 @@
 import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { useLoader } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { motion } from "framer-motion"
-import "../../i18n"
 import { useTranslation } from 'react-i18next'
 import Loader from "../Preloader/Loader"
 

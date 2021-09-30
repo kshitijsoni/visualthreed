@@ -66,7 +66,7 @@ export default function Chemistry() {
                 <Link to='/dnaexplore'>
                     <motion.div variants={fadeItem} className="m-8">
                         <div className="w-72 h-48 cursor-pointer transition duration-500 transform hover:scale-105">
-                            <img className="pb-8 border-4 bg-white border-blue-600 rounded-lg" alt="" src={DNAImg} />
+                            <img className="pb-8 border-4 border-blue-600 rounded-lg" alt="" src={DNAImg} />
                             <div className="grid place-content-center mx-1 -mt-8 text-xl font-semibold text-gray-900 bg-homeImg font-sourceSerifPro">DNA</div>
                         </div>
                     </motion.div>
@@ -75,7 +75,7 @@ export default function Chemistry() {
                 <Link to='/sucroseexplore'>
                     <motion.div variants={fadeItem} className="m-8">
                         <div className="w-72 h-48 cursor-pointer transition duration-500 transform hover:scale-105">
-                            <img className="pb-8 border-4 bg-white border-blue-600 rounded-lg" alt="" src=
+                            <img className="pb-8 border-4 border-blue-600 rounded-lg" alt="" src=
                                 {SucroseImg} />
                             <div className="grid place-content-center mx-1 -mt-8 text-xl font-semibold text-gray-900 bg-homeImg font-sourceSerifPro">Sucrose</div>
                         </div>
@@ -85,7 +85,7 @@ export default function Chemistry() {
                 <Link to='/glucosideexplore'>
                     <motion.div variants={fadeItem} className="m-8">
                         <div className="w-72 h-48 cursor-pointer transition duration-500 transform hover:scale-105">
-                            <img className="pb-8 border-4 bg-white border-blue-600 rounded-lg" alt="" src=
+                            <img className="pb-8 border-4 border-blue-600 rounded-lg" alt="" src=
                                 {GlucosideImg} />
                             <div className="grid place-content-center mx-1 -mt-8 text-xl font-semibold text-gray-900 bg-homeImg font-sourceSerifPro">Octyl Glucoside</div>
                         </div>
@@ -95,7 +95,7 @@ export default function Chemistry() {
                 <Link to='/glucoseexplore'>
                     <motion.div variants={fadeItem} className="m-8">
                         <div className="w-72 h-72 cursor-pointer transition duration-500 transform hover:scale-105">
-                            <img className="pb-8 border-4 bg-white border-blue-600 rounded-lg" alt="" src=
+                            <img className="pb-8 border-4 border-blue-600 rounded-lg" alt="" src=
                                 {GlucoseImg} />
                             <div className="grid place-content-center mx-1 -mt-8 text-xl font-semibold text-gray-900 bg-homeImg font-sourceSerifPro">Glucose</div>
                         </div>
@@ -105,7 +105,7 @@ export default function Chemistry() {
                 <Link to='/waterexplore'>
                     <motion.div variants={fadeItem} className="m-8">
                         <div className="w-72 h-48 cursor-pointer transition duration-500 transform hover:scale-105">
-                            <img className="pb-8 border-4 bg-white border-blue-600 rounded-lg" alt="" src=
+                            <img className="pb-8 border-4 border-blue-600 rounded-lg" alt="" src=
                                 {H2OImg} />
                             <div className="grid place-content-center mx-1 -mt-8 text-xl font-semibold text-gray-900 bg-homeImg font-sourceSerifPro">H2O Molecule</div>
                         </div>
