@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { motion } from "framer-motion"
+import ScrollToTop from "./ScrollToTop"
 import Navbar from '../components/Navbar/Navbar'
 import Home from "../pages/Home/Home"
 import Learn from "../pages/Learn/Learn"
@@ -68,6 +69,7 @@ function Main() {
 
     return (
         <Router>
+            <ScrollToTop />
             <motion.div variants={fadeNav} initial="hidden" animate="visible">
                 <Navbar />
             </motion.div>
@@ -98,7 +100,6 @@ function Main() {
             <motion.div variants={fadeFooter} initial="hidden" animate="visible" >
                 <Footer />
             </motion.div>
-
         </Router>
     )
 }
