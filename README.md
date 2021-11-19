@@ -42,6 +42,7 @@ You can checkout the demo video on youtube by clicking on the thumbnail below.
 - Firebase
 - React-three-fiber
 - i18next
+- Jest
 - Tailwind CSS & Framer Motion
 
 ## 🤝 Credits
@@ -61,6 +62,13 @@ From the project folder, run these commands in console (terminal) to install dep
 ```
 npm install
 npm start
+```
+
+## Testing
+From the project folder, run these commands in console (terminal) to run the test:
+
+```
+npm run test
 ```
 
 ## 🖼️ Some glimpse of the site
