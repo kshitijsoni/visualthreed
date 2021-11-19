@@ -88,12 +88,12 @@ const Login = () => {
                                 </h2>
 
                                 <div className="relative mt-4 font-sourceSerifPro outline ">
-                                    <input type="email" name="username" placeholder=" " ref={emailRef} className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" />
+                                    <input type="email" name="email" placeholder=" " ref={emailRef} className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" />
                                     <label className="absolute top-0 p-2 pb-4 text-lg text-gray-500 duration-300 bg-white md:text-lg -z-1 origin-0">Email</label>
                                 </div>
 
                                 <div className="relative mt-8 font-sourceSerifPro outline ">
-                                    <input type="password" name="username" placeholder=" " ref={passwordRef} className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" required />
+                                    <input type="password" name="password" placeholder=" " ref={passwordRef} className="block w-full pb-2 pl-3 text-lg text-gray-800 placeholder-gray-400 bg-transparent border-b-2 border-gray-400 appearance-none rounded-xl focus:border-green-400 focus:outline-none" required />
                                     <label className="absolute top-0 p-2 text-lg text-gray-500 duration-300 bg-white md:text-lg -z-1 origin-0">Password</label>
                                 </div>
 
