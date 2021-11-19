@@ -21,6 +21,7 @@ import TicTacToe from "../pages/FunZone/Games/TicTacToe"
 import Contact from "../pages/Contact/Contact"
 import Page404 from '../pages/404/404page'
 import Chatbot from '../components/Chatbot/Chatbot';
+// import { MessengerCustomerChat } from "typescript-react-facebook-messenger";
 import Footer from "../components/Footer/Footer"
 
 function Main() {
@@ -94,6 +95,7 @@ function Main() {
             </Switch>
 
             <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
+                {/* <MessengerCustomerChat pageId="" appId="" /> */}
                 <Chatbot />
             </motion.div>
 
