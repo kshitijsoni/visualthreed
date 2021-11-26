@@ -24,4 +24,12 @@ describe('Login component tests', () => {
         expect(inputs[1].name).toBe('password');
     });
 
+    test('Renders all buttons correctly', () => {
+        const buttons = container.querySelectorAll('button');
+        expect(buttons).toHaveLength(2);
+
+        expect(buttons[0].type).toBe('button');
+        expect(buttons[1].type).toBe('button');
+    });
+
 })

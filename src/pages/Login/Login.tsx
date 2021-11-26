@@ -99,9 +99,9 @@ const Login = () => {
 
                                 <div className="grid justify-center grid-cols-1 gap-1 md:gap-4 mx-4 md:grid-cols-2">
 
-                                    <button onClick={signIn} className="h-12 px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 hover:shadow-lg">Sign In</button>
+                                    <button type="button" onClick={signIn} className="h-12 px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 hover:shadow-lg">Sign In</button>
 
-                                    <button onClick={createAccount} className="h-12 px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 hover:shadow-lg">Sign Up</button>
+                                    <button type="button" onClick={createAccount} className="h-12 px-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm font-fontVollkorn my-6 bg-red-50 bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 hover:shadow-lg">Sign Up</button>
                                 </div>
 
                                 <div className="w-full flex items-center justify-center text-lg mb-4">

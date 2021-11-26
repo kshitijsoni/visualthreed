@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { motion } from "framer-motion"
 import ScrollToTop from "./ScrollToTop"
@@ -20,7 +19,7 @@ import FunZone from "../pages/FunZone/FunZone"
 import TicTacToe from "../pages/FunZone/Games/TicTacToe"
 import Contact from "../pages/Contact/Contact"
 import Page404 from '../pages/404/404page'
-import Chatbot from '../components/Chatbot/Chatbot';
+// import Chatbot from '../components/Chatbot/Chatbot';
 // import { MessengerCustomerChat } from "typescript-react-facebook-messenger";
 import Footer from "../components/Footer/Footer"
 
@@ -40,19 +39,19 @@ function Main() {
         },
     }
 
-    const fadeChatbot = {
-        hidden: {
-            scale: .8,
-            opacity: 0
-        },
-        visible: {
-            scale: 1,
-            opacity: 1,
-            transition: {
-                delay: .4
-            }
-        },
-    }
+    // const fadeChatbot = {
+    //     hidden: {
+    //         scale: .8,
+    //         opacity: 0
+    //     },
+    //     visible: {
+    //         scale: 1,
+    //         opacity: 1,
+    //         transition: {
+    //             delay: .4
+    //         }
+    //     },
+    // }
 
     const fadeFooter = {
         hidden: {
@@ -94,10 +93,9 @@ function Main() {
                 <Route component={Page404} />
             </Switch>
 
-            <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
-                {/* <MessengerCustomerChat pageId="" appId="" /> */}
+            {/* <motion.div variants={fadeChatbot} initial="hidden" animate="visible" >
                 <Chatbot />
-            </motion.div>
+            </motion.div> */}
 
             <motion.div variants={fadeFooter} initial="hidden" animate="visible" >
                 <Footer />
