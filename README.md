@@ -43,6 +43,7 @@ You can checkout the demo video on youtube by clicking on the thumbnail below.
 - React-three-fiber
 - i18next
 - Jest
+- Docker
 - Tailwind CSS & Framer Motion
 
 ## 🤝 Credits
@@ -55,6 +56,14 @@ Required to install and run the software:
 
 - [npm](https://www.npmjs.com/get-npm)
 
+## Run the Docker Image
+
+Run the following command to pull and start the image from Docker Hub
+
+```
+docker run skillcept:1.0
+```
+
 ## Installing and Running
 
 From the project folder, run these commands in console (terminal) to install dependencies and run the app:
@@ -65,6 +74,7 @@ npm start
 ```
 
 ## Testing
+
 From the project folder, run these commands in console (terminal) to run the test:
 
 ```

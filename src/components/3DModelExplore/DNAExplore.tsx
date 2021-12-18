@@ -131,7 +131,6 @@ export default function DNAExplore() {
             }
         },
     }
-
     return (
         <>
             <div className="pt-20 bg-ARbg">
