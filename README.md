@@ -61,8 +61,10 @@ Required to install and run the software:
 Run the following command to pull and start the image from Docker Hub
 
 ```
-docker run skillcept:1.0
+docker run -p 3000:3000 aerotrack:1.0
 ```
+
+On the browser visit ```http://localhost:3000``` to see the demo.
 
 ## Installing and Running
 
