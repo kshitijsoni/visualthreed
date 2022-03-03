@@ -20,35 +20,30 @@ You can checkout the demo video on youtube by clicking on the thumbnail below.
 
 - Interactive 3D Models
 - Learn with Augmented Reality
-- Discuss with other students in the chatroom
-- Available in multiple languages
 - Chatbot Assistant
 - Fun games
 
 ## 📃 Pages
 
-- Login/Sign Up
 - Home page
-- Learn page
-- Chatroom
+- Subject page
 - Fun Zone page
 - Contact page
 - 404 Error page
 
 ## 💻 Tech Stack
 
-- React Js
+- Next Js
 - TypeScript
-- Firebase
 - React-three-fiber
-- i18next
 - Jest
 - Docker
 - Tailwind CSS & Framer Motion
 
 ## 🤝 Credits
 
-3D Models: [sketchfab.com](https://sketchfab.com)
+- AR: [echo3D](https://www.echo3d.co/)
+- 3D Models: [sketchfab.com](https://sketchfab.com)
 
 ## Prerequisites
 
@@ -56,35 +51,23 @@ Required to install and run the software:
 
 - [npm](https://www.npmjs.com/get-npm)
 
-## Run the Docker Image
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Run the following command to pull and start the image from Docker Hub
+## Getting Started
 
-```
-docker run -p 3000:3000 aerotrack:1.0
-```
+First, run the development server:
 
-On the browser visit ```http://localhost:3000``` to see the demo.
-
-## Installing and Running
-
-From the project folder, run these commands in console (terminal) to install dependencies and run the app:
-
-```
-npm install
-npm start
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-## Testing
-
-From the project folder, run these commands in console (terminal) to run the test:
-
-```
-npm run test
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## 🖼️ Some glimpse of the site
 
+(All the screen shots are 2 months old, so they might be outdated)
 Register
 ![register](https://user-images.githubusercontent.com/64153988/132960341-12f0d20a-714d-4ff7-927a-56be88920262.png)
 Home page
