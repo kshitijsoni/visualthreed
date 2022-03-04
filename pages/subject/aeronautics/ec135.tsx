@@ -104,7 +104,7 @@ function Details() {
                         <Image width="250" height="250" src="/aeronautics/dragon2qr.jpeg" alt="" />
                     </div>
                     <a href="https://go.echo3d.co/Kn7b" target="_blank" rel="noreferrer">
-                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">View in AR</button>
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm mt-16 bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg">View in AR</button>
                     </a>
                 </div>
             </div>
@@ -128,17 +128,14 @@ export default function EC135() {
 
             <div className="md:grid md:grid-cols-3 md:pr-15 pr-1">
 
-                <div className="w-full h-screen px-4 outline-none cursor-pointer md:col-span-2 lg:block">
+                <div className="w-full h-128px-4 outline-none cursor-pointer md:col-span-2 lg:block">
                     <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
                         <ambientLight intensity={0.7} />
                         <Suspense fallback={null}>
                             <Model scale={0.25} />
                             <Environment preset="city" />
-                            {/* @ts-ignore  */}
-                            <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>
-                        {/* @ts-ignore  */}
-                        <OrbitControls autoRotate />
+                        <OrbitControls autoRotate addEventListener={undefined} hasEventListener={undefined} removeEventListener={undefined} dispatchEvent={undefined} />
                     </Canvas>
                 </div>
 

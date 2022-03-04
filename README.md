@@ -11,9 +11,9 @@ Checkout the ppt from [here](https://www.canva.com/design/DAEmcg4dBHE/y5uIyWIN_Z
 
 ## Demo video
 
-You can checkout the demo video on youtube by clicking on the thumbnail below.
+You can checkout the demo video on youtube by clicking on the thumbnail below. (The demo video was recorded about 2 months old, after that some updates are done)  
 <a href="https://youtu.be/h8DWrPH7-p4">
-<img src="https://user-images.githubusercontent.com/64153988/128834005-92cfab38-c2dd-4dc9-9409-fa4bd062b7dd.png" width="600px">  
+<img src="https://user-images.githubusercontent.com/64153988/156825791-26718342-5a14-463b-8426-4fb8f46cdab4.png" width="600px">  
 </a>
 
 ## 🚀 Main Features
@@ -53,57 +53,4 @@ Required to install and run the software:
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 🖼️ Some glimpse of the site
-
-(All the screen shots are 2 months old, so they might be outdated)
-Register
-![register](https://user-images.githubusercontent.com/64153988/132960341-12f0d20a-714d-4ff7-927a-56be88920262.png)
-Home page
-![home](https://user-images.githubusercontent.com/64153988/132960345-8561e913-5172-4666-804c-79aada60495c.png)
-Learn page
-![learn](https://user-images.githubusercontent.com/64153988/132960347-89904a08-0e99-4c16-9965-0914bcdea8ee.png)
-Class room with 3D model and Augmented Reality
-![classroom](https://user-images.githubusercontent.com/64153988/132960350-6d395a96-c100-48d2-9c14-ec42bc6ba5b2.png)
-AR in Action
-![AR in Action](https://user-images.githubusercontent.com/64153988/132960353-3997a5fb-08e5-4a3d-b8b1-f9e429895fb9.png)
-Chatroom
-![chatroom](https://user-images.githubusercontent.com/64153988/132960355-b542d290-e840-47ff-ad2b-c330dc66514c.png)
-Fun zone
-![funzone](https://user-images.githubusercontent.com/64153988/132960356-d3602734-3b0a-41d3-a026-e76e67b1966b.png)
-Tic Tac Toe
-![tictactoe](https://user-images.githubusercontent.com/64153988/132960358-e7bf92b3-80de-4f3c-acf9-8dfad8a1cf8c.png)
-Contact
-![contact me](https://user-images.githubusercontent.com/64153988/132960367-889dccbe-ba52-4ef8-8a0d-308766f43ea4.png)
-Chatbot Assistant
-![chatbot](https://user-images.githubusercontent.com/64153988/132960370-9cf8953a-b53a-461d-97f3-8776d306a83a.png)
-Available in multiple languages
-![multilang-1](https://user-images.githubusercontent.com/64153988/132960373-c0ed34b9-5fca-40f2-b196-54196c03154e.png)
-![multilang-2](https://user-images.githubusercontent.com/64153988/132960378-8a43b6eb-1dad-41d1-a2b9-e8e0508b3a8f.png)
-404 Page not Found
-![404 Notfound](https://user-images.githubusercontent.com/64153988/132960380-31c8f04b-f45c-49ac-88aa-cd2fc418beb6.png)
-
-## 🐛 Bug Reporting
-
-Feel free to [open an issue](https://github.com/Harshal0902/SkillCept/issues) on GitHub if you find any bug.
-
-## ⭐ Feature Request
-
-Feel free to [Open an issue](https://github.com/Harshal0902/SkillCept/issues) on GitHub to request any additional features you might need for your use case.
-
-## 📜 License
-
-This software is open-source, licensed under the [MIT License](https://github.com/Harshal0902/SkillCept/blob/main/LICENSE).
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Harshal0902)
+## 🌟 Getting Started

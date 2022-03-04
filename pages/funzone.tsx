@@ -21,7 +21,7 @@ export default function Funzone() {
                 <Link href="/funzone/ticTacToe" passHref>
                     <motion.div variants={fadeItem} className="m-8">
                         <div className="cursor-pointer transition duration-500 transform hover:scale-105 border-4 bg-gray-200 border-secondary rounded-lg">
-                            <Image src="/funzone/TicTacToe.png" height="300" width="300" alt="TicTacToe" />
+                            <Image src="/funZone/TicTacToe.png" height="300" width="300" alt="TicTacToe" />
                             <div className="grid place-content-center mx-1 text-2xl font-semibold text-gray-900">Tic Tac Toe Game</div>
                         </div>
                     </motion.div>

@@ -81,7 +81,7 @@ function Board() {
           })}
       </div>
 
-      <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm  bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg' onClick={reset}>Reset</button>
+      <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm  bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg' onClick={reset}>Reset</button>
 
     </div>
   );

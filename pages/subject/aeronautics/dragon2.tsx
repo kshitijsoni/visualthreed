@@ -103,7 +103,7 @@ function Details() {
                         <Image width="250" height="250" src="/aeronautics/dragon2qr.jpeg" alt="" />
                     </div>
                     <a href="https://go.echo3d.co/Kn7b" target="_blank" rel="noreferrer">
-                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm mt-16 bg-red-50 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:shadow-lg">View in AR</button>
+                        <button className="h-12 px-8 ml-8 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm mt-16 bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg">View in AR</button>
                     </a>
                 </div>
             </div>
@@ -128,6 +128,17 @@ export default function Dragon2() {
 
                 <div className="md:grid md:grid-cols-3 md:pr-15 pr-1">
 
+                    <div className="w-full h-128px-4 outline-none cursor-pointer md:col-span-2 lg:block">
+                        <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
+                            <ambientLight intensity={0.7} />
+                            <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
+                            <Suspense fallback={null}>
+                                <Model scale={0.3} />
+                                <Environment preset="city" />
+                            </Suspense>
+                            <OrbitControls autoRotate addEventListener={undefined} hasEventListener={undefined} removeEventListener={undefined} dispatchEvent={undefined} />
+                        </Canvas>
+                    </div>
 
                     <div className="mt-56 md:mt-0 md:col-span-1 p-4">
                         <Details />

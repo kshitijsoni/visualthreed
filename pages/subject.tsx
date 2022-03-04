@@ -24,6 +24,12 @@ export default function Subject() {
                     </Link>
                 ))}
 
+                <div className="m-8">
+                    <div className="w-72 h-56 cursor-pointer transition duration-500 transform hover:scale-105 border-4 border-secondary rounded-lg">
+                        <div className="grid place-content-center text-3xl text-center items-center align-middle h-full font-semibold text-white">More subjects comming soon..</div>
+                    </div>
+                </div>
+
             </motion.div>
 
         </div>
