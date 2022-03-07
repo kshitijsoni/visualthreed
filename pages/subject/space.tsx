@@ -15,7 +15,7 @@ export default function Space({ spaceInfo }) {
         <div className="inline-flex h-1 bg-indigo-500 rounded-full w-72"></div>
       </motion.div>
 
-      <motion.div variants={fadeBottom} initial="hidden" animate="visible" className="flex flex-wrap flex-col-2 justify-around w-full px-16 py-8">
+      <motion.div variants={fadeBottom} initial="hidden" animate="visible" className="flex flex-wrap flex-col-2 justify-around w-full px-16">
 
         <Link href="/subject/space/perseverance" passHref>
           <div className="m-8">

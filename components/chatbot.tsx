@@ -179,9 +179,7 @@ function Chatbot() {
                     handleEnd={handleEnd}
                     opened={opened}
                     headerTitle="Study Bot"
-                    botAvatar={
-                        <Image src="/chatbot.png" height="50" width="50" alt="chatBot icon" className="rounded-full" />
-                    }
+                    botAvatar={ChatbotImg}
                     avatarStyle={{ borderRadius: "100%" }}
                     floating={true}
                     floatingIcon={

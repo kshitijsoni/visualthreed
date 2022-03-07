@@ -15,7 +15,7 @@ export default function Chemistry({ chemInfo }) {
         <div className="inline-flex h-1 bg-indigo-500 rounded-full w-72"></div>
       </motion.div>
 
-      <motion.div variants={fadeBottom} initial="hidden" animate="visible" className="flex flex-wrap flex-col-2 justify-around w-full px-16 py-8">
+      <motion.div variants={fadeBottom} initial="hidden" animate="visible" className="flex flex-wrap flex-col-2 justify-around w-full px-16">
 
         <Link href="/subject/chemistry/dna" passHref>
           <div className="m-8">

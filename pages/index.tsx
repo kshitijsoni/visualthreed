@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <motion.div variants={fadeFeat} initial="hidden" animate="visible" className="mb-20 text-center">
+      <motion.div variants={fadeFeat} initial="hidden" animate="visible" className="mb-12 md:mb-20 text-center">
         <h1 className="mb-4 text-4xl font-extrabold leading-10 tracking-wider title-font sm:text-5xl sm:leading-none md:text-6xl text-white">Other Features</h1>
         <div className="flex justify-center mt-2">
           <div className="inline-flex h-1 bg-indigo-500 rounded-full w-52"></div>

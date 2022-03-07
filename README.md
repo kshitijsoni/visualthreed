@@ -11,9 +11,9 @@ Checkout the ppt from [here](https://www.canva.com/design/DAEmcg4dBHE/y5uIyWIN_Z
 
 ## Demo video
 
-You can checkout the demo video on youtube by clicking on the thumbnail below. (The demo video was recorded about 2 months old, after that some updates are done)  
-<a href="https://youtu.be/h8DWrPH7-p4">
-<img src="https://user-images.githubusercontent.com/64153988/156825791-26718342-5a14-463b-8426-4fb8f46cdab4.png" width="600px">  
+You can checkout the demo video on youtube by clicking on the thumbnail below.
+<a href="https://youtu.be/6DoDPskkAbs">
+<img src="https://user-images.githubusercontent.com/64153988/156973196-b33237e7-550b-404a-ae9f-cacbc5dc406a.png" width="600px">  
 </a>
 
 ## 🚀 Main Features
@@ -55,11 +55,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## 🌟 Getting Started
 
-First, run the development server:
+From the project folder, run these commands in console (terminal) to install dependencies and run the app:
 
 ```bash
+# Install the dependencies
+npm install
+# Run the app
 npm run dev
+
 # or
+
+# Install the dependencies
+yarn add
+# Run the app
 yarn dev
 ```
 
@@ -87,32 +95,51 @@ On the browser visit `http://localhost:3000` to see the demo.
 
 ## 🖼️ Some glimpse of the site
 
-(All the screen shots are 2 months old, so they might be outdated)
-Register
-![register](https://user-images.githubusercontent.com/64153988/132960341-12f0d20a-714d-4ff7-927a-56be88920262.png)
-Home page
-![home](https://user-images.githubusercontent.com/64153988/132960345-8561e913-5172-4666-804c-79aada60495c.png)
-Learn page
-![learn](https://user-images.githubusercontent.com/64153988/132960347-89904a08-0e99-4c16-9965-0914bcdea8ee.png)
-Class room with 3D model and Augmented Reality
-![classroom](https://user-images.githubusercontent.com/64153988/132960350-6d395a96-c100-48d2-9c14-ec42bc6ba5b2.png)
-AR in Action
-![AR in Action](https://user-images.githubusercontent.com/64153988/132960353-3997a5fb-08e5-4a3d-b8b1-f9e429895fb9.png)
-Chatroom
-![chatroom](https://user-images.githubusercontent.com/64153988/132960355-b542d290-e840-47ff-ad2b-c330dc66514c.png)
-Fun zone
-![funzone](https://user-images.githubusercontent.com/64153988/132960356-d3602734-3b0a-41d3-a026-e76e67b1966b.png)
-Tic Tac Toe
-![tictactoe](https://user-images.githubusercontent.com/64153988/132960358-e7bf92b3-80de-4f3c-acf9-8dfad8a1cf8c.png)
-Contact
-![contact me](https://user-images.githubusercontent.com/64153988/132960367-889dccbe-ba52-4ef8-8a0d-308766f43ea4.png)
-Chatbot Assistant
+### Home page
+
+![Home](https://user-images.githubusercontent.com/64153988/156827440-61ca1a34-3d8d-4c51-8e57-b3eb84fe1232.png)
+
+### Select subject
+
+![Select subject](https://user-images.githubusercontent.com/64153988/156827416-20e4ba7b-04e8-4b10-bb70-2b3923426ec5.png)
+
+### Chemistry Class
+
+![chemistry](https://user-images.githubusercontent.com/64153988/156827270-dbd1d58d-a7b4-4440-8679-2fed72ac0832.png)
+
+## DNA
+
+![dna](https://user-images.githubusercontent.com/64153988/156827288-e5bd9fee-b50c-4bff-a69f-e6260232c76d.png)
+
+### Click on different parts to know more
+
+![Click on different parts to know more 1](https://user-images.githubusercontent.com/64153988/156827369-468fe2c1-7783-4802-b03b-9178b9c15f8a.png)
+![Click on different parts to know more 2](https://user-images.githubusercontent.com/64153988/156827374-486e2e34-4dc8-4c6a-a4be-01bc92ff2359.png)
+![Click on different parts to know more 3](https://user-images.githubusercontent.com/64153988/156827384-4d0dcd1e-8e08-4724-af57-7c55b8f01829.png)
+
+### AR in Action
+
+![AR in Action-uncrop](https://user-images.githubusercontent.com/64153988/156831141-2e35892c-8fad-4007-80bf-1bbca2c8205a.png)
+
+### Fun zone
+
+![funzone](https://user-images.githubusercontent.com/64153988/156827156-5b81c283-375f-4a67-8073-be571c499e46.png)
+
+### Tic Tac Toe
+
+![tic-tac-toe](https://user-images.githubusercontent.com/64153988/156827135-3fea527e-dcbf-42ea-910b-05e875e15509.png)
+
+### Contact
+
+![contact](https://user-images.githubusercontent.com/64153988/156827114-158da52d-00cd-428f-8cf3-f9d4ff9b0d06.png)
+
+### Chatbot Assistant
+
 ![chatbot](https://user-images.githubusercontent.com/64153988/132960370-9cf8953a-b53a-461d-97f3-8776d306a83a.png)
-Available in multiple languages
-![multilang-1](https://user-images.githubusercontent.com/64153988/132960373-c0ed34b9-5fca-40f2-b196-54196c03154e.png)
-![multilang-2](https://user-images.githubusercontent.com/64153988/132960378-8a43b6eb-1dad-41d1-a2b9-e8e0508b3a8f.png)
-404 Page not Found
-![404 Notfound](https://user-images.githubusercontent.com/64153988/132960380-31c8f04b-f45c-49ac-88aa-cd2fc418beb6.png)
+
+### 404 Page not Found
+
+![404](https://user-images.githubusercontent.com/64153988/156826951-5411ca98-f867-47fc-b64e-337016515c20.png)
 
 ## 🐛 Bug Reporting
 

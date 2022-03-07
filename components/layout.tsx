@@ -3,14 +3,13 @@ import Head from 'next/head'
 import Navbar from './navbar'
 import Footer from './footer'
 import Preloader from './preloader'
-import Chatbot from "./chatbot";
+import Chatbot from "./chatbot"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        // setTimeout(() => setLoading(false), 2500)
-        setTimeout(() => setLoading(false), 0)
+        setTimeout(() => setLoading(false), 2500)
     }, [])
 
     return (

@@ -24,7 +24,7 @@ export default function ChemistryModels({ chemData }) {
     return (
         <div className="pt-20 md:pt-24 text-white">
 
-            <Link href="/subject/biology" passHref>
+            <Link href="/subject/chemistry" passHref>
                 <button className="left-2 md:px-8 px-6 mr-1 mb-1 ease-linear transition-all duration-150 flex flex-row text-white align-middle text-xl" type="button" aria-hidden="false" aria-label="button">
                     <BiArrowBack className="h-4 mt-2" aria-hidden="false" />
                     go back
