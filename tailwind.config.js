@@ -17,6 +17,9 @@ module.exports = {
         '128': '40rem',
         '256': '80rem',
       },
+      'animation': {
+        'spin-slow': 'spin 12s linear infinite',
+      },
     },
     fontFamily: {
       'montserrat': ['Montserrat'],

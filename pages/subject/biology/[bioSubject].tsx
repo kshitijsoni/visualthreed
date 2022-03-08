@@ -44,7 +44,7 @@ export default function BiologyModels({ bioData }) {
                 <div className="md:grid md:grid-cols-3 md:pr-15 pr-1">
 
                     <div className="w-full h-128 px-8 md:px-4 outline-none cursor-grab md:col-span-2 lg:block">
-                        {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
+                        <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 50 }}>
                             <ambientLight intensity={0.7} />
                             <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                             <Suspense fallback={<Loader />}>
@@ -52,7 +52,7 @@ export default function BiologyModels({ bioData }) {
                                 <Environment preset="city" />
                             </Suspense>
                             <OrbitControls autoRotate addEventListener={undefined} hasEventListener={undefined} removeEventListener={undefined} dispatchEvent={undefined} />
-                        </Canvas> */}
+                        </Canvas>
                     </div>
 
                     <div className="mt-16 md:mt-0 md:col-span-1 p-4">

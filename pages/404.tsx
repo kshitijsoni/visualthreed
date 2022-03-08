@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export default function Page404() {
   return (
@@ -1493,9 +1494,17 @@ export default function Page404() {
         </div>
 
         <div className="pl-4 md:pl-16 md:mt-36 py-4 tracking-wider text-left text-white md:flex md:flex-col md:justify-center italic">
-          <div className="box_astronaut">
-            <Image src="/404/astronaut.png" height="250" width="220" alt="Astronaut" className="mt-16 object_astronaut" />
-          </div>
+          {/* <div className="box_astronaut"> */}
+          <motion.div
+            animate={{
+              x: [0, 50, -100, 50, -100, 0],
+              y: [0, -100, -50, -10, 30, 10, 0],
+            }}
+            transition={{ duration: 10, repeat: Infinity }}
+            className="absolute p-1 right-1/4 top-96 md:top-28 rotate-12"
+          >
+            <Image src="/404/astronaut.png" height="250" width="220" alt="Astronaut" className="mt-16 object_astronaut animate-spin-slow" />
+          </motion.div>
           <h1 className="text-6xl md:text-9xl">404</h1>
           <h1 className="text-2xl md:text-5xl">Page not Found</h1>
           <h1 className="text-xl md:text-3xl">UH OH! Looks like you are lost in space</h1>

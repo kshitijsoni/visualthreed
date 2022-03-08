@@ -17,7 +17,7 @@ const Home: NextPage = () => {
             <p className="self-center text-xl tracking-wide text-justify">SkillCept is an AR-based web platform where students from any background can visit the site and learn various concepts with the help of 3D Models, which makes their understanding easier, and faster. SkillCept can help students achieve better results through visualization and full immersion in the subject matter.</p>
 
             <Link href="/subject" passHref>
-              <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm  bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg '>Explore</button>
+              <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm  bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg '>Explore Subjects</button>
             </Link>
 
           </motion.div>
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
-            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-6">
+            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-8">
               <Image className="w-12" src="/home/3d.png" height="50" width="50" alt="3D" />
             </div>
             <div className="mt-8">
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
-            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-6">
+            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-8">
               <Image className="w-12" src="/home/AR.png" height="50" width="50" alt="AR" />
             </div>
             <div className="mt-8">
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="relative w-64 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl">
-            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-6">
+            <div className="absolute flex items-center p-3 text-white rounded-full shadow-xl bg-gradient-to-r from-secondary to-tertiary left-4 -top-8">
               <Image className="w-12" src="/home/multilang.png" height="50" width="50" alt="MultiLang" />
             </div>
             <div className="mt-8">

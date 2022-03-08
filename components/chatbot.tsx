@@ -23,7 +23,7 @@ const theme = {
 const steps = [
     {
         id: '1',
-        message: 'Hi, What is your name?',
+        message: 'Hi, I am Study Bot. What is your name?',
         trigger: '2',
     },
     {
@@ -33,7 +33,7 @@ const steps = [
     },
     {
         id: '3',
-        message: "Hi {previousValue}, I am Study Bot, how are you feeling today?",
+        message: "Hi {previousValue}, how are you feeling today?",
         trigger: "expressions",
     },
     {
