@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
           <motion.div variants={fadeLeft} initial="hidden" animate="visible" className="pr-4 md:flex md:flex-col md:justify-center">
 
-            <h2 className="self-center mb-4 text-5xl font-semibold tracking-wider md:text-4xl lg:text-7xl">SkillCept</h2>
+            <h2 className="self-center mb-4 text-5xl font-semibold tracking-wider md:text-4xl lg:text-7xl">Visual 3D</h2>
 
             <p className="self-center text-xl tracking-wide text-justify">Visual 3D is an AR-based web platform where students from any background can visit the site and learn various concepts with the help of 3D Models, which makes their understanding easier, and faster. SkillCept can help students achieve better results through visualization and full immersion in the subject matter.</p>
 
