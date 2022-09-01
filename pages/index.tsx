@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
             <h2 className="self-center mb-4 text-5xl font-semibold tracking-wider md:text-4xl lg:text-7xl">SkillCept</h2>
 
-            <p className="self-center text-xl tracking-wide text-justify">SkillCept is an AR-based web platform where students from any background can visit the site and learn various concepts with the help of 3D Models, which makes their understanding easier, and faster. SkillCept can help students achieve better results through visualization and full immersion in the subject matter.</p>
+            <p className="self-center text-xl tracking-wide text-justify">Visual 3D is an AR-based web platform where students from any background can visit the site and learn various concepts with the help of 3D Models, which makes their understanding easier, and faster. SkillCept can help students achieve better results through visualization and full immersion in the subject matter.</p>
 
             <Link href="/subject" passHref>
               <button className='w-56 p-2 px-8 mt-4 text-base font-semibold tracking-wider text-white border rounded-full shadow-sm  bg-red-50 bg-gradient-to-r from-secondary to-tertiary hover:shadow-lg '>Explore Subjects</button>
