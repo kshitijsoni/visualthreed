@@ -24,7 +24,7 @@ export default function Navbar() {
                                     <div className="flex items-start justify-between p-5 border-solid rounded-t">
                                         <Link href="/" passHref>
                                             <div className="text-3xl font-base tracking-wide cursor-pointer">
-                                                SkillCept
+                                                Visual3D
                                             </div>
                                         </Link>
 
