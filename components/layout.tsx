@@ -15,8 +15,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <Head>
-                <title>SkillCept</title>
-                <meta name="description" content="SkillCept is an AR-based web platform for students" />
+                <title>Visual3D</title>
+                <meta name="description" content="Visual3D is an AR-based web platform for students" />
                 <link rel="icon" href="/skillcept.png" />
             </Head>
 
