@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <Headroom className="fixed z-50 w-full">
             <nav className="flex items-center bg-primary py-2 flex-wrap px-4 tracking-wider">
-                <Link href="/" passHref><span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">SkillCept
+                <Link href="/" passHref><span className="p-2 mr-4 inline-flex items-center text-4xl md:text-5xl cursor-pointer font-base text-white">Visual 3D
                 </span></Link>
                 <button className="lg:hidden right-0 absolute md:px-8 px-6 mr-1 mb-1 ease-linear transition-all duration-150" type="button" onClick={() => setShowNavbar(true)} aria-hidden="false" aria-label="button">
                     <HiOutlineMenuAlt3 className="h-7 w-7 text-white" aria-hidden="false" />
